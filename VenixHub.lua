@@ -97,7 +97,7 @@ SubmitButton.MouseButton1Click:Connect(function()
   
     
 screenGui:Destroy()
- loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/MrMoneys/VenixHub-Premium-/refs/heads/main/README.lua"))()
 
   
   end
