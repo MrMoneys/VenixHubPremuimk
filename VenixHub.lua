@@ -62,10 +62,10 @@ end)
 local KeySystem = Instance.new("TextBox")
 KeySystem.Size = UDim2.new(1, 0, 0.5, 0)
 KeySystem.Position = UDim2.new(0, 0, 0, 0)
-KeySystem.Text = "Enter the Key"
-KeySystem.TextColor3 = Color3.new(0, 0, 0)
+KeySystem.Text = "Enter the Key 🔑"
+KeySystem.TextColor3 = Color3.new(1,1,1)
 KeySystem.BackgroundTransparency = 0.5
-KeySystem.BackgroundColor3 = Color3.new(1, 1, 1)
+KeySystem.BackgroundColor3 = Color3.new(0, 0, 0)
 KeySystem.TextWrapped = true
 KeySystem.Parent = frame
  
@@ -73,7 +73,7 @@ local SubmitButton = Instance.new("TextButton")
 SubmitButton.Size = UDim2.new(1, 0, 0.5, 0)
 SubmitButton.Position = UDim2.new(0, 0, 0.5, 0)
 SubmitButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
-SubmitButton.Text = "Submit💎"
+SubmitButton.Text = "Check Key🔑"
 SubmitButton.Parent = frame
 
  
