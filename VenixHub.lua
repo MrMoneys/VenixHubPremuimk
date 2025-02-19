@@ -72,6 +72,7 @@ KeySystem.Parent = frame
 local SubmitButton = Instance.new("TextButton")
 SubmitButton.Size = UDim2.new(1, 0, 0.5, 0)
 SubmitButton.Position = UDim2.new(0, 0, 0.5, 0)
+SubmitButton.BackgroundColor3 = Color3.fromRGB(0, 25, 0)
 SubmitButton.Text = "Submit"
 SubmitButton.Parent = frame
 
