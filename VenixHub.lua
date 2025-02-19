@@ -92,7 +92,7 @@ end)
 --------------------------------------------------------------------------
 SubmitButton.MouseButton1Click:Connect(function()
     local KeySystem = KeySystem.Text
-    if KeySystem == "Abroba" or KeySystem == "deqd" or KeySystem == "Alok" or KeySystem == "nem" then
+    if KeySystem == "WUsEqUSAFEwAyuZeZe29" or KeySystem == "LabAKenEFuyewEPepA45" or KeySystem == "vaMusejuPEWAfUgAxA23" or KeySystem == "zAquNaYERUDateTawu33" then
     
   
     
