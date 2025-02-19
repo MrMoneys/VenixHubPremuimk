@@ -72,14 +72,14 @@ KeySystem.Parent = frame
 local SubmitButton = Instance.new("TextButton")
 SubmitButton.Size = UDim2.new(1, 0, 0.5, 0)
 SubmitButton.Position = UDim2.new(0, 0, 0.5, 0)
-SubmitButton.BackgroundColor3 = Color3.fromRGB(0, 25, 0)
-SubmitButton.Text = "Submit"
+SubmitButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+SubmitButton.Text = "Submit💎"
 SubmitButton.Parent = frame
 
  
 local CloseButton = Instance.new("TextButton")
 CloseButton.Size = UDim2.new(0, 20, 0, 20)
-CloseButton.Position = UDim2.new(1, -20, 0, 0)
+CloseButton.Position = UDim2.new(1, -20,- 0.21, 0)
 CloseButton.Text = "X"
 CloseButton.TextColor3 = Color3.new(1, 1, 1)
 CloseButton.BackgroundColor3 = Color3.new(1, 0, 0)
