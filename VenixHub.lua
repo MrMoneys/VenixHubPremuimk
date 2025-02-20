@@ -16,13 +16,7 @@ FrameCorner.CornerRadius = UDim.new(0, 10)
 FrameCorner.Parent = Frame
 
 -- Ícone do hub
-local Icon = Instance.new("ImageLabel")
-Icon.Name = "HubIcon"
-Icon.Size = UDim2.new(0, 30, 0, 30) -- Tamanho do ícone
-Icon.Position = UDim2.new(0, 10, 0.05, 0) -- Posição ao lado do título
-Icon.BackgroundTransparency = 1 -- Fundo transparente
-Icon.Image = "rbxassetid://115176004817984" -- Substitua pelo ID do asset da imagem
-Icon.Parent = Frame
+
 
 local Close = Instance.new("TextButton")
 Close.Size = UDim2.new(0, 40, 0, 40)
