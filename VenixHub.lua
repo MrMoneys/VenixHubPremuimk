@@ -92,7 +92,7 @@ end
 
 -- Contador de tentativas
 local attempts = 0
-local maxAttempts = 5
+local maxAttempts = 3
 
 CheckKey.MouseButton1Click:Connect(function()
     local enteredKey = TextBox.Text
@@ -110,7 +110,11 @@ CheckKey.MouseButton1Click:Connect(function()
         if attempts >= maxAttempts then
             TextBox.PlaceholderText = "Max attempts reached. Please try again later."
             TextBox.Text = ""
-            CheckKey.Visible = false -- Desativa o botão após muitas tentativas
+            CheckKey.Visible = false -- Desativa o botão após muitas tentativas 
+            game.Players.LocalPlayer:Kick("Max attempts!")
+            end
+
+              
         else
             TextBox.PlaceholderText = "Invalid key. " .. (maxAttempts - attempts) .. " attempts left."
             TextBox.Text = ""
