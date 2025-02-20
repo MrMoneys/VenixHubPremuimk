@@ -15,6 +15,15 @@ local FrameCorner = Instance.new("UICorner")
 FrameCorner.CornerRadius = UDim.new(0, 10)
 FrameCorner.Parent = Frame
 
+-- Ícone do hub
+local Icon = Instance.new("ImageLabel")
+Icon.Name = "HubIcon"
+Icon.Size = UDim2.new(0, 30, 0, 30) -- Tamanho do ícone
+Icon.Position = UDim2.new(0, 10, 0.05, 0) -- Posição ao lado do título
+Icon.BackgroundTransparency = 1 -- Fundo transparente
+Icon.Image = "rbxassetid://115176004817984" -- Substitua pelo ID do asset da imagem
+Icon.Parent = Frame
+
 local Close = Instance.new("TextButton")
 Close.Size = UDim2.new(0, 40, 0, 40)
 Close.Position = UDim2.new(1, -40, 0, 0)
@@ -30,7 +39,7 @@ end)
 local Title = Instance.new("TextLabel")
 Title.Size = UDim2.new(1, 0, 0, 30)
 Title.Position = UDim2.new(0, 0, 0.05, 0)
-Title.Text = "Venix Hub [Premium]💎"
+Title.Text = "Venix Hub [Premium]"
 Title.TextSize = 18
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.BackgroundTransparency = 1
@@ -72,7 +81,7 @@ local CheckKeyCorner = Instance.new("UICorner")
 CheckKeyCorner.CornerRadius = UDim.new(0, 5)
 CheckKeyCorner.Parent = CheckKey
 
--- Lista de chaves válidas (pode ser criptografada ou armazenada no servidor)
+-- Lista de chaves válidas
 local validKeys = {
     "zAquNaYERUDateTawu33",
     "vaMusejuPEWAfUgAxA23",
@@ -92,7 +101,7 @@ end
 
 -- Contador de tentativas
 local attempts = 0
-local maxAttempts = 3
+local maxAttempts = 5
 
 CheckKey.MouseButton1Click:Connect(function()
     local enteredKey = TextBox.Text
@@ -110,11 +119,7 @@ CheckKey.MouseButton1Click:Connect(function()
         if attempts >= maxAttempts then
             TextBox.PlaceholderText = "Max attempts reached. Please try again later."
             TextBox.Text = ""
-            CheckKey.Visible = false -- Desativa o botão após muitas tentativas 
-            
-            end
-
-              
+            CheckKey.Visible = false -- Desativa o botão após muitas tentativas
         else
             TextBox.PlaceholderText = "Invalid key. " .. (maxAttempts - attempts) .. " attempts left."
             TextBox.Text = ""
