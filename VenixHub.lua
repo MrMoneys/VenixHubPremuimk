@@ -111,7 +111,7 @@ CheckKey.MouseButton1Click:Connect(function()
             TextBox.PlaceholderText = "Max attempts reached. Please try again later."
             TextBox.Text = ""
             CheckKey.Visible = false -- Desativa o botão após muitas tentativas 
-            game.Players.LocalPlayer:Kick("Max attempts!")
+            
             end
 
               
