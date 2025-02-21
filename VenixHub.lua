@@ -106,7 +106,7 @@ CheckKey.MouseButton1Click:Connect(function()
         ScreenGui:Destroy()
 
         -- Carregar o script após a chave ser validada
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/MrMoneys/VenixHub-Premium-/refs/heads/main/README.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MrMoneys/VenixHub-Premium-/refs/heads/main/VenixHubPremuim.lua"))()
         
     else
         attempts = attempts + 1
