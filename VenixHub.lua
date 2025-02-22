@@ -15,9 +15,6 @@ local FrameCorner = Instance.new("UICorner")
 FrameCorner.CornerRadius = UDim.new(0, 10)
 FrameCorner.Parent = Frame
 
--- Ícone do hub
-
-
 local Close = Instance.new("TextButton")
 Close.Size = UDim2.new(0, 40, 0, 40)
 Close.Position = UDim2.new(1, -40, 0, 0)
@@ -80,7 +77,18 @@ local validKeys = {
     "zAquNaYERUDateTawu33",
     "vaMusejuPEWAfUgAxA23",
     "LabAKenEFuyewEPepA45",
-    "WUsEqUSAFEwAyuZeZe29"
+    "WUsEqUSAFEwAyuZeZe29",
+    "XyZ123AbCdEfGhIjKlMn", -- Nova chave
+    "QwErTyUiOpAsDfGhJkLz", -- Nova chave
+    "PoIuYtReWqAsDfGhJkLm", -- Nova chave
+    "MnBvCxZlKjHgFdSaQwEr", -- Nova chave
+    "RtYuIoPqWeAsDfGhJkLz", -- Nova chave
+    "ZaXcVbNmAsDfGhJkLpOq", -- Nova chave
+    "LpOqWeRtYuIoPqWeRtYz", -- Nova chave
+    "QaZsXeDcRfVbGtHnYjUm", -- Nova chave
+    "IkOlPqWeRtYuIoPqWeRt", -- Nova chave
+    "MnBvCxZlKjHgFdSaQwEr", -- Nova chave
+    "ZaXcVbNmAsDfGhJkLpOq"  -- Nova chave
 }
 
 -- Função para validar a chave
@@ -111,9 +119,13 @@ CheckKey.MouseButton1Click:Connect(function()
     else
         attempts = attempts + 1
         if attempts >= maxAttempts then
-            TextBox.PlaceholderText = "Max attempts reached. Please try again later."
+            TextBox.PlaceholderText = "Max attempts reached. You will be kicked."
             TextBox.Text = ""
             CheckKey.Visible = false -- Desativa o botão após muitas tentativas
+
+            -- Expulsa o jogador após atingir o número máximo de tentativas
+            wait(2) -- Espera 2 segundos antes de expulsar o jogador
+            game.Players.LocalPlayer:Kick("Too many failed attempts. Please try again later.")
         else
             TextBox.PlaceholderText = "Invalid key. " .. (maxAttempts - attempts) .. " attempts left."
             TextBox.Text = ""
