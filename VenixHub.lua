@@ -30,7 +30,7 @@ end)
 local Title = Instance.new("TextLabel")
 Title.Size = UDim2.new(1, 0, 0, 30)
 Title.Position = UDim2.new(0, 0, 0.05, 0)
-Title.Text = "Venix Hub [Premium]"
+Title.Text = "ＶＥＮＩＸ ＨＵＢ [ＰＲＥＭＵＩＭ]"
 Title.TextSize = 18
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.BackgroundTransparency = 1
